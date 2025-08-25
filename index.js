@@ -4,7 +4,7 @@ btns.forEach(function (btn) {
         let img = this.parentElement.querySelector(".box-img img");
         let imgSrc = img.src;
         // let whatsappLink = `https://wa.me/6280348611?text=${imgSrc}How_Much`;
-        let url = `https://wa.me/9569374626?text=${encodeURIComponent(imgSrc +" "+ "Can I Get The Price")}`;
+        let url = `https://wa.me/9569374626?text=${encodeURIComponent(imgSrc +" "+ "Is this available")}`;
         console.log(url);
         window.open(url, "_blank");
     });
@@ -72,4 +72,5 @@ document.getElementById('contact-p-instagram').addEventListener('click', ()=>{
 document.getElementById('contact-p-number').addEventListener('click', ()=>{
     window.open ='www.google.com', '_blank'
 })
+
 
