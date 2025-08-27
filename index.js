@@ -1,14 +1,19 @@
-let btns = document.querySelectorAll(".box button");
-btns.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-        let img = this.parentElement.querySelector(".box-img img");
-        let imgSrc = img.src;
-        // let whatsappLink = `https://wa.me/6280348611?text=${imgSrc}How_Much`;
-        let url = `https://wa.me/9569374626?text=${encodeURIComponent(imgSrc + " " + "Is this available")}`;
-        console.log(url);
-        window.open(url, "_blank");
-    });
-});
+
+// let btns = document.querySelectorAll(".box button");
+// btns.forEach(function (btn) {
+//     btn.addEventListener("click", function () {
+//         let img = this.parentElement.querySelector(".box-img img");
+//         let imgSrc = img.src;
+//         // let whatsappLink = `https://wa.me/6280348611?text=${imgSrc}How_Much`;
+//         let url = `https://wa.me/9569374626?text=${encodeURIComponent(imgSrc + " " + "Is this available")}`;
+//         console.log(url);
+//         window.open(url, "_blank");
+//     });
+// });
+
+
+
+
 
 let hamburger = document.getElementById('hamburger');
 let navul = document.getElementById('nav-ul');

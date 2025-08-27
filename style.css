@@ -201,7 +201,10 @@ button:hover {
     ;
     /* padding-block: .4rem; */
 }
-
+.box p span{
+    text-align: center;
+    color: rgb(78, 78, 78);
+}
 .box-img {
     height: 20rem;
     display: flex;
