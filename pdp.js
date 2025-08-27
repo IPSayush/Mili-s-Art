@@ -39,6 +39,12 @@ if (window.location.pathname.endsWith('pdp.html')) {
         if (desc) desc.textContent = data.desc;
     }
 }
+let btn = document.getElementById("btn");
+ btn.addEventListener("click", function () {
+    let imgSrc = document.getElementById("product-img").src;
 
-
-
+        // let whatsappLink = `https://wa.me/6280348611?text=${imgSrc}How_Much`;
+        let url = `https://wa.me/9569374626?text=${encodeURIComponent(imgSrc + " " + "Is this available")}`;
+        console.log(url);
+        window.open(url, "_blank");
+    });
