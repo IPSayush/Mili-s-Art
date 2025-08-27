@@ -180,7 +180,9 @@ button:hover {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+.nobox{
+    display: none;
+}
 .box {
     width: 250px;
     padding: 1rem;
@@ -390,7 +392,9 @@ button:hover{
             .sec-heading h1 {
                 font-size: 2rem;
             }
-
+            .sec-heading h1::after {
+                width: 85vw;
+            }
             .third-heading h2 {
                 font-size: 1.5rem;
             }
@@ -402,13 +406,18 @@ button:hover{
             .about-container {
                 padding: 15px;
             }
+            .open-gallery button{
+                font-size: 2rem;
+            }
         }
 
         @media (max-width: 480px) {
             .sec-heading h1 {
                 font-size: 1.8rem;
             }
-
+            .sec-heading h1::after {
+                width: 85vw;
+            }
             .third-heading h2 {
                 font-size: 1.3rem;
             }
@@ -419,6 +428,9 @@ button:hover{
 
             .about-container {
                 padding: 10px;
+            }
+            .open-gallery button{
+                font-size: 2rem;
             }
         }
 @media (max-width: 650px) {
@@ -488,5 +500,8 @@ button:hover{
     .open-gallery button{
         font-size: 1rem;
     }
+    .open-gallery button{
+                font-size: 2rem;
+            }
 }
 
