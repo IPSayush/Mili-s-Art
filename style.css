@@ -216,26 +216,24 @@ button:hover {
     width: 15rem;
 }
 
-.odd {
-    width: 15rem;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        .box:nth-child(odd) .clip-path {
+            width: 15rem;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
 
-}
+        .box:nth-child(even) .clip-path {
+            width: 15rem;
+            border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+        }
 
-.even {
-    width: 15rem;
-    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
-
-}
-
-.even:hover {
+.box:nth-child(even) .clip-path:hover {
     transition: all .5s;
     transform: scale(1.1);
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 
 }
 
-.odd:hover {
+.box:nth-child(odd) .clip-path:hover {
     transition: all .5s;
     transform: scale(1.1);
     border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
@@ -252,7 +250,14 @@ button:hover {
     padding-block: .8rem;
     /* width: 15rem; */
 }
-.open-gallery button{
+.open-gallery-div{
+    background-color: var(--color-4);
+    max-width: 1200px;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+}
+.open-gallery-div button{
     font-size: 2rem;
     /* font-weight: 200; */
     width: 50vw;
@@ -409,7 +414,7 @@ button:hover{
             .about-container {
                 padding: 15px;
             }
-            .open-gallery button{
+            .open-gallery-div button{
                 font-size: 2rem;
             }
         }
@@ -432,7 +437,7 @@ button:hover{
             .about-container {
                 padding: 10px;
             }
-            .open-gallery button{
+            .open-gallery-div button{
                 font-size: 2rem;
             }
         }
@@ -500,10 +505,10 @@ button:hover{
     .box-img {
         height: 20rem;
     }
-    .open-gallery button{
+    .open-gallery-div button{
         font-size: 1rem;
     }
-    .open-gallery button{
+    .open-gallery-div button{
                 font-size: 2rem;
             }
 }
