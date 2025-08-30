@@ -1,49 +1,49 @@
 export const data = [
     {
         title: "Abstract Art",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/800px-Placeholder_view_vector.svg.png",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
         dis: "A colorful abstract design full of creativity.",
         price: "Price: ₹399",
     },
     {
         title: "Mountain View",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/800px-Placeholder_view_vector.svg.png",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
         dis: "Beautiful mountain landscape for your wall.",
         price: "Price: ₹499",
     },
     {
         title: "Ocean Waves",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/800px-Placeholder_view_vector.svg.png",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
         dis: "Calming ocean waves captured in a frame.",
         price: "Price: ₹599",
     },
     {
         title: "City Lights",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/800px-Placeholder_view_vector.svg.png",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
         dis: "Modern city lights glowing at night.",
         price: "Price: ₹699",
     },
     {
         title: "Vintage Street",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/800px-Placeholder_view_vector.svg.png",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
         dis: "Aesthetic vintage street artwork.",
         price: "Price: ₹799",
     },
     {
         title: "Floral Beauty",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/800px-Placeholder_view_vector.svg.png",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
         dis: "Fresh blooming flowers with vibrant colors.",
         price: "Price: ₹899",
     },
     {
         title: "Desert Dunes",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/800px-Placeholder_view_vector.svg.png",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
         dis: "Golden sand dunes under sunlight.",
         price: "Price: ₹999",
     },
     {
         title: "Forest Path",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/800px-Placeholder_view_vector.svg.png",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
         dis: "A peaceful path through the forest.",
         price: "Price: ₹1099",
     }

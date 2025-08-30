@@ -1,6 +1,3 @@
-import { data } from "./data.js";
-
-
 // const boxes = document.querySelectorAll(".containt .box");
 
 // data.forEach((item, index) => {
