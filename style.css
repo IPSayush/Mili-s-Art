@@ -244,14 +244,14 @@ button:hover {
     /* width: 15rem; */
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     animation: anyMay-1 both;
-    animation-timeline: view(50% 20%);
+    animation-timeline: view(30% 30%);
 }
 
 .box:nth-child(even) .clip-path {
     /* width: 15rem; */
     border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
     animation: anyMay-2 both;
-    animation-timeline: view(50% 20%);
+    animation-timeline: view(30% 30%);
 }
 
 .box:nth-child(even) .clip-path:hover {
@@ -271,19 +271,23 @@ button:hover {
 @keyframes anyMay-1 {
     from {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        width: 50%;
     }
 
     to {
         border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+        width: 98%;
     }
 }
 @keyframes anyMay-2 {
     from {
         border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+        width: 50%;
     }
 
     to {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        width: 98%;
     }
 }
 

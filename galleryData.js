@@ -46,6 +46,48 @@ export const data = [
         url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
         dis: "A peaceful path through the forest.",
         price: "Price: ₹1099",
+    },
+    {
+        title: "Mountain View",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
+        dis: "Beautiful mountain landscape for your wall.",
+        price: "Price: ₹499",
+    },
+    {
+        title: "Ocean Waves",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
+        dis: "Calming ocean waves captured in a frame.",
+        price: "Price: ₹599",
+    },
+    {
+        title: "City Lights",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
+        dis: "Modern city lights glowing at night.",
+        price: "Price: ₹699",
+    },
+    {
+        title: "Vintage Street",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
+        dis: "Aesthetic vintage street artwork.",
+        price: "Price: ₹799",
+    },
+    {
+        title: "Floral Beauty",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
+        dis: "Fresh blooming flowers with vibrant colors.",
+        price: "Price: ₹899",
+    },
+    {
+        title: "Desert Dunes",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
+        dis: "Golden sand dunes under sunlight.",
+        price: "Price: ₹999",
+    },
+    {
+        title: "Forest Path",
+        url: "https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
+        dis: "A peaceful path through the forest.",
+        price: "Price: ₹1099",
     }
 ];
 
@@ -66,15 +108,35 @@ data.forEach((item) => {
     <p><b>${item.price}</b> <span>${item.dis}</span></p>
     <button>Get On Whatsapp</button>
   `;
+    // const btn = box.querySelector("button");
+    // btn.addEventListener("click", () => {
+    //     let img = box.querySelector(".box-img img");
+    //     let imgSrc = img.src;
+    //     // let whatsappLink = `https://wa.me/6280348611?text=${imgSrc}How_Much`;
+    //     let url = `https://wa.me/9569374626?text=${encodeURIComponent(imgSrc + " " + "Is this available")}`;
+    //     console.log(url);
+    //     window.open(url, "_blank");
+    // });
+
     const btn = box.querySelector("button");
     btn.addEventListener("click", () => {
-        let img = box.querySelector(".box-img img");
-        let imgSrc = img.src;
-        // let whatsappLink = `https://wa.me/6280348611?text=${imgSrc}How_Much`;
-        let url = `https://wa.me/9569374626?text=${encodeURIComponent(imgSrc + " " + "Is this available")}`;
-        console.log(url);
-        window.open(url, "_blank");
-    });
+  let img = box.querySelector(".box-img img").src;
+  let price = box.querySelector("b").textContent;
+  let dis = box.querySelector("span").textContent;
+  let title = box.querySelector("h2").textContent;
+
+  // Save data in localStorage
+  localStorage.setItem("product", JSON.stringify({
+    img, price, dis, title
+  }));
+
+  // Redirect to pdp.html
+  window.location.href = "pdp.html";
+});
+
+
+
+
 
     container.appendChild(box);
 });
