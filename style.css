@@ -1,7 +1,7 @@
 :root {
-    --color-5: #F9F7F7;
-    --color-4: #bccff3;
-    --color-3: #a5c7f1;
+    --color-5: #F9F7F7; 
+    --color-4: #bccff3; 
+    --color-3: #a5c7f1; 
     --color-2: #112D4E;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 header {
-    background-image: url('header\ image.jpg');
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/014/929/882/small_2x/multi-layers-blue-color-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -58,9 +58,11 @@ header {
 }
 
 .nav ul {
-    /* position: absolute; */
     position: fixed;
     right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+    top: 0;
     display: flex;
     padding: .6rem;
     gap: 2rem;
@@ -232,8 +234,9 @@ button:hover {
     /* height: 20rem; */
     display: flex;
     align-items: center;
-    ;
-    /* background-color: gray; */
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 15px;
 }
 
 .box-img img {
@@ -316,7 +319,7 @@ button:hover {
 .open-gallery-div button {
     font-size: 2rem;
     /* font-weight: 200; */
-    width: 50vw;
+    width: 90vw;
     border-radius: 50px;
     border: 1px solid rgb(78, 78, 78);
     background: none;
@@ -486,12 +489,14 @@ button:hover {
 
     .open-gallery-div button {
         font-size: 2rem;
+        width: 70vw;
     }
 }
 
 @media (max-width: 650px) {
     .nav {
         background-color: #bccff39d;
+        position: fixed;
     }
 
     .logo {
@@ -594,7 +599,9 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-
+    header {
+        height: 60vh;
+    }
     .nav .logo,
     #hamburger {
         font-size: 1.5rem;
@@ -658,6 +665,8 @@ button:hover {
 
     .open-gallery-div button {
         font-size: 1rem;
+        padding-block: .8vh;
+        width: 90vw;
     }
 
 }

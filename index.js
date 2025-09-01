@@ -30,19 +30,20 @@
 //     });
 // });
 
-
-let hamburger = document.getElementById('hamburger');
-let navul = document.getElementById('nav-ul');
-hamburger.addEventListener('click', () => {
-    if (navul.style.display === 'flex') {
+if (window.innerWidth < 650) {
+    let hamburger = document.getElementById('hamburger');
+    let navul = document.getElementById('nav-ul');
+    hamburger.addEventListener('click', () => {
+        if (navul.style.display === 'flex') {
+            navul.style.display = 'none';
+        } else {
+            navul.style.display = 'flex';
+        }
+    });
+    navul.addEventListener('click', () => {
         navul.style.display = 'none';
-    } else {
-        navul.style.display = 'flex';
-    }
-});
-navul.addEventListener('click', () => {
-    navul.style.display = 'none';
-});
+    });
+}
 //   if(navul.style.display="none"){
 //     hamburger.addEventListener("click",() =>{
 //         navul.style.display="flex";
@@ -96,12 +97,12 @@ navul.addEventListener('click', () => {
 
 
 
-document.getElementById('contact-p-email').addEventListener('click', ()=>{
-    window.location.href = "mailto:ayushbatham34@gmail.com?subject=Inquiry&body=Hello Ayush, I want to know about your products.",  '_blank';
+document.getElementById('contact-p-email').addEventListener('click', () => {
+    window.location.href = "mailto:ayushbatham34@gmail.com?subject=Inquiry&body=Hello Ayush, I want to know about your products.", '_blank';
 });
-document.getElementById('contact-p-instagram').addEventListener('click', ()=>{
+document.getElementById('contact-p-instagram').addEventListener('click', () => {
     window.location.href = "https://instagram.com/ayush_.ab._", "_blank";
 });
-document.getElementById('contact-p-number').addEventListener('click', ()=>{
-      window.location.href = "tel:+919876543210";
+document.getElementById('contact-p-number').addEventListener('click', () => {
+    window.location.href = "tel:+919876543210";
 });

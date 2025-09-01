@@ -70,12 +70,6 @@ export const data = [
     url: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=",
     dis: "Calming ocean waves captured in a frame.",
     price: "Price: ₹599",
-  },
-  {
-    title: "Ocean Waves",
-    url: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=",
-    dis: "Calming ocean waves captured in a frame.",
-    price: "Price: ₹599",
   }
 ];
 
