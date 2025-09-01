@@ -632,8 +632,8 @@ button:hover {
     }
 
     .box button {
-        font-size: 1rem;
-        padding: 1rem;
+        font-size: .9rem;
+        padding-inline: 1em;
     }
 
     .sec-heading h1 {
@@ -659,4 +659,5 @@ button:hover {
     .open-gallery-div button {
         font-size: 1rem;
     }
+
 }
