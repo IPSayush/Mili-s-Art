@@ -31,6 +31,7 @@ body {
 }
 
 header {
+    animation: headerImgChanger 15s linear infinite;
     background-image: url('https://static.vecteezy.com/system/resources/thumbnails/014/929/882/small_2x/multi-layers-blue-color-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg');
     background-size: cover;
     background-position: center;
@@ -41,7 +42,20 @@ header {
     width: 100%;
     /* height: 72vh; */
 }
-
+@keyframes headerImgChanger {
+    0%{
+        background-image: url('https://static.vecteezy.com/system/resources/thumbnails/014/929/882/small_2x/multi-layers-blue-color-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg');
+    }
+    33.33%{
+        background-image: url('https://img.freepik.com/premium-photo/series-gray-blue-abstract-shapes_762785-221535.jpg?w=360');
+    }
+    66.66%{
+        background-image: url('https://img.freepik.com/premium-photo/blue-white-abstract-painting-wave-with-ocean-background_605423-158406.jpg?w=360');
+    }
+    100%{
+        background-image: url('https://static.vecteezy.com/system/resources/thumbnails/014/929/882/small_2x/multi-layers-blue-color-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg');
+    }
+}
 .nav {
     /* height: 7vh; */
     width: 100%;
@@ -235,7 +249,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #e3eefc;
     border-radius: 15px;
 }
 

@@ -112,7 +112,7 @@ data.forEach((item) => {
       <h2 style="margin-bottom: 0;">${item.title}</h2>
     </div>
     <p><b>${item.price}</b> <span>${item.dis}</span></p>
-    <button>Get On Whatsapp</button>
+    <button>Buy Now</button>
   `;
     // const btn = box.querySelector("button");
     // btn.addEventListener("click", () => {
