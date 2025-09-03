@@ -1,31 +1,33 @@
-:root {
+/* :root {
     --color-5: #F9F7F7; 
     --color-4: #bccff3; 
     --color-3: #a5c7f1; 
     --color-2: #112D4E;
+} */
+:root {
+    --color-5: white;
+    --color-4: white;
+    --color-3: white;
+    --color-2: #000000;
 }
 
 body {
-    background-color: var(--color-4);
+    background-color: rgba(189, 189, 189, 0.466);
 }
 
 .containt,
 .about-container,
-.contact {
-    background-color: var(--color-3);
+.contact-p {
     border-radius: 10px;
-}
-
-.sec-heading {
-    border-radius: 10px;
-    background-color: var(--color-3);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     /* color: rgb(0, 0, 0); */
     color: var(--color-5);
 }
@@ -42,20 +44,25 @@ header {
     width: 100%;
     /* height: 72vh; */
 }
+
 @keyframes headerImgChanger {
-    0%{
+    0% {
         background-image: url('https://static.vecteezy.com/system/resources/thumbnails/014/929/882/small_2x/multi-layers-blue-color-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg');
     }
-    33.33%{
+
+    33.33% {
         background-image: url('https://img.freepik.com/premium-photo/series-gray-blue-abstract-shapes_762785-221535.jpg?w=360');
     }
-    66.66%{
+
+    66.66% {
         background-image: url('https://img.freepik.com/premium-photo/blue-white-abstract-painting-wave-with-ocean-background_605423-158406.jpg?w=360');
     }
-    100%{
+
+    100% {
         background-image: url('https://static.vecteezy.com/system/resources/thumbnails/014/929/882/small_2x/multi-layers-blue-color-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg');
     }
 }
+
 .nav {
     /* height: 7vh; */
     width: 100%;
@@ -95,7 +102,7 @@ header {
 }
 
 .nav ul li:hover {
-    background-color: #BCCFF39D;
+    background-color: #ffffff9d;
     border-bottom: 2px solid var(--color-2);
     transition: all .5s;
     transform: scale(1.1);
@@ -107,7 +114,7 @@ ul li a {
 }
 
 .nav ul li a:hover {
-    color: var(--color-2);
+    color: black;
 }
 
 #hamburger {
@@ -125,10 +132,13 @@ ul li a {
 }
 
 .h-div h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 3.2rem;
-    color: var(--color-5);
+    color: rgba(13, 0, 255, 0.301)
     background: none;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    
 }
 
 .p-div {
@@ -165,7 +175,7 @@ ul li a {
     padding: 1rem;
 }
 
-button:hover {
+.box button:hover {
     cursor: pointer;
     transition: transform 0.3s;
     transform: scale(1.1);
@@ -203,7 +213,7 @@ button:hover {
 .containt {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -225,7 +235,8 @@ button:hover {
     align-items: center;
     flex-direction: column;
     background-color: var(--color-4);
-    border-radius: 1rem;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .box b {
@@ -249,11 +260,15 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e3eefc;
+    /* background-color: #e3eefc; */
+    background-color: rgb(183, 255, 115);
     border-radius: 15px;
-}
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
 
 .box-img img {
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     width: 98%;
 }
 
@@ -296,6 +311,7 @@ button:hover {
         width: 98%;
     }
 }
+
 @keyframes anyMay-2 {
     from {
         border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
@@ -323,9 +339,8 @@ button:hover {
 }
 
 .open-gallery-div {
-    background-color: var(--color-4);
     max-width: 1200px;
-    margin: 10px auto 0;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
 }
@@ -338,6 +353,8 @@ button:hover {
     border: 1px solid rgb(78, 78, 78);
     background: none;
     color: rgb(78, 78, 78);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 button:hover {
@@ -354,13 +371,17 @@ button:hover {
 }
 
 .sec-heading {
+    background-color: white;
     max-width: 1200px;
-    margin: 10px auto;
+    margin: 1rem auto;
     text-align: center;
     text-align: center;
     /* margin-bottom: 25px; */
     padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+
 
 .sec-heading h1 {
     color: var(--color-2);
@@ -377,7 +398,7 @@ button:hover {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 85vw;
+    width: 85%;
     height: 3px;
     background-color: var(--color-2);
 }
@@ -421,12 +442,13 @@ button:hover {
 
 .third-heading {
     flex: 1;
-    padding: 20px;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
     /* background-color: var(--color-3); */
 }
 
 .third-heading h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333333;
     margin-bottom: 20px;
     font-weight: 600;
@@ -451,7 +473,8 @@ button:hover {
 }
 
 .contact-p {
-    width: 90vw;
+    width: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -509,7 +532,7 @@ button:hover {
 
 @media (max-width: 650px) {
     .nav {
-        background-color: #bccff39d;
+        background-color: #ffffff9d;
         position: fixed;
     }
 
@@ -537,7 +560,7 @@ button:hover {
     }
 
     .nav ul li {
-        background-color: #bccff3cb;
+        background-color: #ffffff49;
         font-size: 1rem;
         border-bottom: 2px solid var(--color-2);
         box-shadow: var(--color-5);
@@ -576,7 +599,7 @@ button:hover {
 
     .containt {
         gap: 0.5rem;
-        padding-block: 1rem;
+        padding-block: 2rem;
     }
 
     .box {
@@ -616,6 +639,7 @@ button:hover {
     header {
         height: 60vh;
     }
+
     .nav .logo,
     #hamburger {
         font-size: 1.5rem;
@@ -623,7 +647,7 @@ button:hover {
 
     .containt {
         gap: 0rem;
-        padding: .3rem;
+        padding: 2rem .3rem;
     }
 
     .box {
