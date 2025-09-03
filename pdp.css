@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Libertinus+Serif+Display&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Moon+Dance&family=Playwrite+IT+Moderna:wght@200&family=Story+Script&family=Style+Script&display=swap');
+
 :root {
     --color-5: #F9F7F7;
     --color-4: #bccff3;
@@ -6,9 +8,12 @@
 }
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: "Libertinus Serif Display", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 

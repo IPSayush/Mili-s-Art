@@ -1,9 +1,5 @@
-/* :root {
-    --color-5: #F9F7F7; 
-    --color-4: #bccff3; 
-    --color-3: #a5c7f1; 
-    --color-2: #112D4E;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Libertinus+Serif+Display&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Moon+Dance&family=Playwrite+IT+Moderna:wght@200&family=Story+Script&family=Style+Script&display=swap');
+
 :root {
     --color-5: white;
     --color-4: white;
@@ -28,9 +24,10 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    /* color: rgb(0, 0, 0); */
-    color: var(--color-5);
+    font-family: "Libertinus Serif Display", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 }
 
 header {
@@ -43,7 +40,36 @@ header {
     /* justify-content: center; */
     align-items: center;
     width: 100%;
-    /* height: 72vh; */
+    height: 72vh;
+    position: relative;
+}
+
+.header-text-div {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background-color: #ccc; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.header-text-div h1 {
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    width: 50vw;
+}
+
+.header-text-div p {
+    font-size: 1em;
+    width: 60vw;
+    line-height: 1.4em;
 }
 
 @keyframes headerImgChanger {
@@ -73,10 +99,13 @@ header {
 }
 
 .nav .logo {
-    color: #F6CAFF;
+    color: #000000;
     font-size: 3rem;
     padding: 1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .nav ul {
@@ -119,58 +148,6 @@ ul li a {
 
 #hamburger {
     display: none;
-}
-
-.h-div {
-    width: 40vw;
-    /* height: 30vh; */
-    padding: 8rem 0rem 2rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
-.h-div h1 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 3.2rem;
-    color: rgba(13, 0, 255, 0.301);
-    background: none;
-    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
-    
-}
-
-.p-div {
-    width: 40vw;
-    padding: 2rem;
-    /* height: 20vh; */
-    font-size: 18px;
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    ;
-}
-
-.p-div p {
-    text-align: center;
-}
-
-.btn-div {
-    display: flex;
-    gap: 2rem;
-    padding-bottom: 1.4rem;
-}
-
-.rd-btn {
-    /* height: 8vh; */
-    width: 15vw;
-    border: 2px solid white;
-    background: none;
-    font-size: 1.4rem;
-    font: bold;
-    color: white;
-    padding: 1rem;
 }
 
 .box button:hover {
@@ -262,7 +239,7 @@ ul li a {
     background-color: rgb(183, 255, 115);
     border-radius: 15px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    }
+}
 
 .box-img img {
     /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
@@ -301,24 +278,28 @@ ul li a {
 @keyframes anyMay-1 {
     from {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-        width: 50%;
+        /* width: 90%; */
+        transform: scale(.8);
     }
 
     to {
         border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
-        width: 98%;
+        /* width: 98%; */
+        transform: scale(1);
     }
 }
 
 @keyframes anyMay-2 {
     from {
         border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
-        width: 50%;
+        /* width: 90%; */
+        transform: scale(.8);
     }
 
     to {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-        width: 98%;
+        /* width: 98%; */
+        transform: scale(1);
     }
 }
 
@@ -358,7 +339,8 @@ ul li a {
 button:hover {
     background: transparent;
     cursor: pointer;
-    transition: all .5s;;
+    transition: all .5s;
+    ;
     font-weight: 400;
     /* border: 2px solid var(--color-5); */
 }
@@ -452,6 +434,7 @@ button:hover {
     margin-bottom: 20px;
     font-weight: 600;
     text-align: center;
+    padding: 1vw;
 }
 
 .third-heading p {
@@ -498,6 +481,16 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    .header-text-div h1 {
+        font-size: 2.8em;
+        width: 60vw;
+    }
+
+    .header-text-div p {
+        font-size: 1em;
+
+    }
+
     .about-content {
         flex-direction: column;
         gap: 30px;
@@ -635,8 +628,24 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-    header {
+    #header {
         height: 60vh;
+        ;
+    }
+
+    .header-text-div {
+        gap: 1rem;
+    }
+
+    .header-text-div h1 {
+        width: 80vw;
+        font-size: 2.5em;
+    }
+
+    .header-text-div p {
+        width: 80vw;
+        font-size: 0.9em;
+
     }
 
     .nav .logo,
