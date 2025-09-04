@@ -56,6 +56,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    mix-blend-mode: difference;
 }
 
 .header-text-div h1 {
