@@ -30,20 +30,57 @@
 //     });
 // });
 
-if (window.innerWidth < 650) {
-    let hamburger = document.getElementById('hamburger');
-    let navul = document.getElementById('nav-ul');
-    hamburger.addEventListener('click', () => {
-        if (navul.style.display === 'flex') {
-            navul.style.display = 'none';
-        } else {
-            navul.style.display = 'flex';
+let hamburger = document.querySelector(".hamburger");
+let icon = document.querySelector(".ri-menu-3-line");
+let nav = document.querySelector(".nav_2");
+let nav_links = document.querySelectorAll(".nav_links");
+let flag = true;
+    hamburger.addEventListener("click", (()=>{
+        if(flag){
+            // nav.style.left = "0";
+            slidein();
+            icon.style.color = "white";
+            flag = false;
+            
+        }else{
+            // nav.style.left = "100vw";
+            slideout();
+            icon.style.color = "black";
+            flag = true;
         }
-    });
-    navul.addEventListener('click', () => {
-        navul.style.display = 'none';
-    });
-}
+    }))
+    if (window.innerWidth < 650) {
+         nav_links.forEach((link)=>{
+        link.addEventListener("click",()=>{
+            slideout();
+            icon.style.color = "black";
+            flag = true;
+        })
+
+    })
+        
+    }
+    function slidein  () {
+        nav.style.left = "0";
+    }
+    function slideout () {
+        nav.style.left = "100vw";
+    }
+
+// if (window.innerWidth < 650) {
+//     let hamburger = document.getElementById('hamburger');
+//     let navul = document.getElementById('nav-ul');
+//     hamburger.addEventListener('click', () => {
+//         if (navul.style.display === 'flex') {
+//             navul.style.display = 'none';
+//         } else {
+//             navul.style.display = 'flex';
+//         }
+//     });
+//     navul.addEventListener('click', () => {
+//         navul.style.display = 'none';
+//     });
+// }
 //   if(navul.style.display="none"){
 //     hamburger.addEventListener("click",() =>{
 //         navul.style.display="flex";
