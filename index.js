@@ -53,6 +53,7 @@ let flag = true;
          nav_links.forEach((link)=>{
         link.addEventListener("click",()=>{
             slideout();
+            // console.log("hyyy");
             icon.style.color = "black";
             flag = true;
         })
